@@ -14,6 +14,20 @@
         <div class="h-100 bg-purple flex-1 hov-flex-2"></div>
         <div class="h-100 bg-pink flex-1 hov-flex-2"></div>
     </div>
+
+    <script>
+        [...document.querySelectorAll('.hov-flex-2')].forEach(el => {
+            el.style.transition = "flex 170ms";
+            el.onmouseover = () => {
+                el.classList.remove("flex-1");
+                el.classList.add("flex-2");
+            };
+            el.onmouseout = () => {
+                el.classList.add("flex-1");
+                el.classList.remove("flex-2");
+            };
+        });
+    </script>
 </body>
 
 </html>
