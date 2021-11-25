@@ -45,6 +45,14 @@
     color: var(--slib-pink) !important;
 }
 
+.text-white {
+    color: white !important;
+}
+
+.text-black {
+    color: black !important;
+}
+
 
 /* BACKGROUND */
 
