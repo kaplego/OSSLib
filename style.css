@@ -10,6 +10,10 @@
     --slib-pink: #E679C8;
 }
 
+* {
+    scroll-behavior: smooth !important;
+}
+
 
 /* COLOR */
 
@@ -234,6 +238,14 @@ code.inline {
     padding: 2px 4px !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
+}
+
+ul {
+    padding-left: 1.5rem !important;
+}
+
+ul>ul {
+    padding-left: 1.2rem !important;
 }
 
 .flex-1 {
