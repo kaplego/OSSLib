@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
     --slib-blue: #56B5FF;
     --slib-dark-blue: #3366FF;
@@ -167,43 +167,43 @@
 h1,
 .h1 {
     font-size: 3rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 h2,
 .h2 {
     font-size: 2.5rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 h3,
 .h3 {
     font-size: 2rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 h4,
 .h4 {
     font-size: 1.5rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 h5,
 .h5 {
     font-size: 1.25rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 h6,
 .h6 {
     font-size: 1rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 p,
@@ -254,6 +254,35 @@ ul {
 
 ul>ul {
     padding-left: 1.2rem !important;
+}
+
+
+/* ITEMS RANGE */
+
+.items-range {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.items-range.col {
+    flex-direction: column !important;
+}
+
+.items-range>.item:first-child {
+    flex: 2 !important;
+}
+
+.items-range>.item {
+    flex: 1 !important;
+    transition: flex 200ms;
+}
+
+.items-range:hover>.item:first-child:not(:hover) {
+    flex: 1 !important;
+}
+
+.items-range>.item:hover {
+    flex: 2 !important;
 }
 
 .justify-content-center {
