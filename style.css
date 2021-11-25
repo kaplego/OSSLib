@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
     --slib-blue: #56B5FF;
     --slib-green: #57F287;
@@ -137,6 +138,54 @@
 
 .d-inline-flex {
     display: inline-flex !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-grid {
+    display: grid !important;
+}
+
+
+/* TEXT */
+
+h1,
+.h1 {
+    font-size: 3rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+h2 .h2 {
+    font-size: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+h3 .h3 {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+h4 .h4 {
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+h5 .h5 {
+    font-size: 1.25rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+h6 .h6 {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
 
 .flex-1 {
