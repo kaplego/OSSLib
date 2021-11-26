@@ -1,7 +1,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="osslib.css" type="text/css">
+    <script src="osslib.js" charset="utf-8" type="text/javascript"></script>
 </head>
 
 <body>
@@ -52,8 +53,34 @@
     <a class="btn btn-blue">Normal</a>
     <a class="btn btn-blue btn-lg">Large</a>
     <hr class="separator">
-    <h4 class="headline-4">Items range - colors</h4>
-    <div class="h-100 d-flex items-range">
+    <h4 class="headline-4">Javascript ossbg attributes</h4>
+
+    <code fillby="nextElementSibling"></code>
+    <textarea class="d-none"><div ossbg="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></div></textarea>
+    <div style="height: 100px;width: 100px;border: 1px solid #000;" ossbg="--github-mark"></div>
+
+    <code fillby="nextElementSibling"></code>
+    <textarea class="d-none"><div ossbg="--github-mark" ossbg-pos="left" ossbg-size="contain"></div></textarea>
+    <div style="height: 100px;width: 150px;border: 1px solid #000;" ossbg="--github-mark" ossbg-pos="left" ossbg-size="contain"></div>
+
+    <code fillby="nextElementSibling"></code>
+    <textarea class="d-none"><div ossbg="--github-mark" ossbg-pos="top"></div></textarea>
+    <div style="height: 100px;width: 150px;border: 1px solid #000;" ossbg="--github-mark" ossbg-pos="top"></div>
+
+    <hr class="separator">
+    <h4 class="headline-4">Items range</h4>
+    <div class="d-flex items-range" id="test" style="height: 250px;">
+        <div class='h-100 bg-dark-blue item text-white d-flex justify-content-center align-items-center'></div>
+        <div class="h-100 bg-blue item text-white d-flex justify-content-center align-items-center"></div>
+        <div class="h-100 bg-green item text-white d-flex justify-content-center align-items-center"></div>
+        <div class="h-100 bg-yellow item text-white d-flex justify-content-center align-items-center"></div>
+        <div class="h-100 bg-orange item text-white d-flex justify-content-center align-items-center"></div>
+        <div class="h-100 bg-red item text-white d-flex justify-content-center align-items-center"></div>
+        <div class="h-100 bg-purple item text-white d-flex justify-content-center align-items-center"></div>
+        <div class="h-100 bg-pink item text-white d-flex justify-content-center align-items-center"></div>
+    </div>
+    <h4 class="headline-4">Colors</h4>
+    <div class="d-flex items-range" style="height: 250px;">
         <div class='h-100 bg-dark-blue item text-white d-flex justify-content-center align-items-center'>
             #3366FF
         </div>

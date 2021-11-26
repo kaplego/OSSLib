@@ -296,7 +296,9 @@ a[href]:hover {
 }
 
 code:not(.inline),
-code.block {
+.code:not(.inline),
+code.block,
+.code.block {
     display: inline-block !important;
     padding: 5px 10px !important;
     background-color: rgba(120, 120, 120, .1) !important;
@@ -304,11 +306,13 @@ code.block {
     font-size: .9rem;
     margin-top: .75rem !important;
     margin-bottom: .75rem !important;
-    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace !important;
 }
 
 p code:not(.block),
-code.inline {
+p .code:not(.block),
+code.inline,
+.code.inline {
     padding: 2px 4px !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
