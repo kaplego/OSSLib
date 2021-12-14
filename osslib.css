@@ -348,6 +348,17 @@ ul>ul {
     cursor: pointer !important;
     transition: background-color 100ms !important;
     margin: 4px;
+    text-decoration: none !important;
+}
+
+.btn-circle {
+    height: 2rem !important;
+    width: 2rem !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100% !important;
 }
 
 .btn-sm {
@@ -357,7 +368,7 @@ ul>ul {
 
 .btn-lg {
     padding: 8px 13px !important;
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
 }
 
 .btn-light {
