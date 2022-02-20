@@ -1,4 +1,4 @@
-var vars = {
+if (!image_vars) const image_vars = {
     "--github-mark": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
 }
 
@@ -14,9 +14,9 @@ window.addEventListener('load', () => {
             if (el.parentElement.nodeName == "PRE") return;
             var url = el.attributes.getNamedItem('ossbg').value;
 
-            if (!vars[url] && url.match(/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/) == null) return;
+            if (!image_vars[url] && url.match(/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/) == null) return;
 
-            if (vars[url]) url = vars[url];
+            if (image_vars[url]) url = image_vars[url];
 
             // POSITION
             if (el.attributes.getNamedItem('ossbg-pos') != null) pos = el.attributes.getNamedItem('ossbg-pos').value;
