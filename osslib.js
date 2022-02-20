@@ -1,7 +1,3 @@
-if (!image_vars) const image_vars = {
-    "--github-mark": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-}
-
 window.addEventListener('load', () => {
     var jq = document.createElement('script');
     jq.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
@@ -10,6 +6,10 @@ window.addEventListener('load', () => {
     document.querySelector('body').appendChild(jq);
 
     jq.addEventListener('load', async() => {
+        if (!image_vars) const image_vars = {
+            "--github-mark": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        }
+        
         [...$('*[ossbg]')].forEach(el => {
             if (el.parentElement.nodeName == "PRE") return;
             var url = el.attributes.getNamedItem('ossbg').value;
