@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
     document.querySelector('body').appendChild(jq);
 
     jq.addEventListener('load', async() => {
-        if (!image_vars) {
+        if (image_vars !== undefined) {
             const image_vars = {
                 "--github-mark": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
             }
