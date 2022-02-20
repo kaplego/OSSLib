@@ -6,8 +6,10 @@ window.addEventListener('load', () => {
     document.querySelector('body').appendChild(jq);
 
     jq.addEventListener('load', async() => {
-        if (!image_vars) const image_vars = {
-            "--github-mark": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        if (!image_vars) {
+            const image_vars = {
+                "--github-mark": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            }
         }
         
         [...$('*[ossbg]')].forEach(el => {
