@@ -17,9 +17,9 @@ window.addEventListener('load', () => {
             if (el.parentElement.nodeName == "PRE") return;
             var url = el.attributes.getNamedItem('ossbg').value;
 
-            if (!image_vars[url] && url.match(/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/) == null) return;
+            if (!images[url] && url.match(/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/) == null) return;
 
-            if (image_vars[url]) url = image_vars[url];
+            if (images[url]) url = images[url];
 
             // POSITION
             if (el.attributes.getNamedItem('ossbg-pos') != null) pos = el.attributes.getNamedItem('ossbg-pos').value;
