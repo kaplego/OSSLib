@@ -6,12 +6,13 @@ window.addEventListener('load', () => {
     document.querySelector('body').appendChild(jq);
 
     jq.addEventListener('load', async() => {
-        if (image_vars !== undefined) {
-            const image_vars = {
-                "--github-mark": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-            }
-        }
-        
+        var images;
+
+        if (image_vars !== undefined) images = image_vars;
+        else images = {
+            "--github-mark": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        };
+
         [...$('*[ossbg]')].forEach(el => {
             if (el.parentElement.nodeName == "PRE") return;
             var url = el.attributes.getNamedItem('ossbg').value;
