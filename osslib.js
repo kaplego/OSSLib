@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
     jq.addEventListener('load', async() => {
         var images;
 
-        if (image_vars !== undefined) images = image_vars;
+        if (typeof image_vars !== 'undefined') images = image_vars;
         else images = {
             "--github-mark": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
         };
