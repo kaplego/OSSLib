@@ -11,12 +11,12 @@
     --slib-dark: #0D0D0D;
     --slib-blue-rgb: 86, 181, 255;
     --slib-dark-blue-rgb: 51, 102, 255;
-    --slib-green-rgb: 87, 242, 135;
-    --slib-yellow-rgb: 254, 231, 92;
-    --slib-orange-rgb: 255, 176, 102;
-    --slib-red-rgb: 237, 66, 69;
-    --slib-purple-rgb: 187, 132, 214;
-    --slib-pink-rgb: 230, 121, 200;
+    --slib-green-rgb: 48, 203, 0;
+    --slib-yellow-rgb: 255, 219, 0;
+    --slib-orange-rgb: 249, 115, 0;
+    --slib-red-rgb: 239, 34, 0;
+    --slib-purple-rgb: 156, 15, 191;
+    --slib-pink-rgb: 234, 26, 183;
     --slib-dark-rgb: 13, 13, 13;
 }
 
